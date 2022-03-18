@@ -309,39 +309,78 @@ header .fa-bars{
   color:#fff;
 }
 
-.contact form{
-  text-align: center;
-}
-
-.contact form .inputBox{
+.contact-info{
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .inputBox input, select{
-  height: 4rem;
-  width:49%;
-  padding:0 1rem;
-  margin:1rem 0;
-  font-size: 1.7rem;
-  color:var(--black);
-}
-
-.contact form textarea{
-  height:20rem;
-  resize: none;
-  padding:1rem;
-  font-size: 1.5rem;
   width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 10px;
 }
 
-.contact form input[type="submit"]{
-  width:20rem;
+
+.card{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
 }
 
-.contact form input[type="submit"]:hover{
-  background:var(--black);
+.card-icon{
+  font-size: 28px;
+  background: #ff6348;
+  /* background: var(--blue); */
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  /* color: var(--blue); */
+  transform: scale(1.6);
+}
+
+.card p{
+  font-size: 13px;
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+.events{
+  background-color: #eee8e8ce;
 }
 
 .events .box-container{
@@ -355,7 +394,7 @@ header .fa-bars{
   margin:2rem 1rem;
   overflow: hidden;
   border-radius: .5rem;
-  background-color: #44484bce;
+  background-color: #bdc2c5ce;
   box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
 }
 
@@ -381,17 +420,13 @@ header .fa-bars{
   color:black;
 }
 
-.events .box-container .box .content:hover h3{
-  color:var(--blue);
-}
-
 .events .box-container .box .content p{
   font-size: 1.3rem;
   color:black;
 }
 
 .footer{
-  background:var(--black);
+  background-color: #000;
 }
 
 .footer p{
