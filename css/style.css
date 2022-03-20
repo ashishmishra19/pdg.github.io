@@ -178,11 +178,16 @@ header .fa-bars{
 
 .about .content .box p{
   font-size: 1.7rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: none;
   text-align: justify;
   padding-left: 1rem;
   color:#666;
 }
 
+.about .content .box strong{
+  text-transform: none;
+}
 .galaries{
   min-height: 100vh;
 }
@@ -431,6 +436,7 @@ header .fa-bars{
 
 .footer p{
   font-size: 1.5rem;
+  text-transform: none;
   color:#eee;
   padding:1rem 0;
 }
@@ -455,7 +461,7 @@ header .fa-bars{
 }
 
 .footer h3{
-  color:#fff;
+  color:rgb(28, 116, 248);
   font-size: 3rem;
 }
 
